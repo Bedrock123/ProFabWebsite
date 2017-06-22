@@ -29,6 +29,31 @@
     })
 
 
-  
+var body = $('header');
+    var backgrounds = [
+      'url("./img/pro-fab-compressed/profab-race-car-overlay.jpg")', 
+      'url("./img/pro-fab-compressed/profab-slide2.jpg")', 
+    'url("./img/pro-fab-compressed/profab-slide3.jpg")', 
+      ];
+    var current = 0;
+
+    function nextBackground() {
+       
+       
+    
+  $(body).fadeTo('slow', 0.3, function()
+    {
+   body.css('background', backgrounds[current = ++current % backgrounds.length]);
+}).fadeTo('slow', 1);
+
+
+
+        setTimeout(nextBackground, 5000);
+    }
+    setTimeout(nextBackground, 5000);
+    body.css('background', backgrounds[0]);
 
 })(jQuery); // End of use strict
+
+
+
