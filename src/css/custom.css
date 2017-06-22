@@ -15,7 +15,7 @@ body {
 hr {
     border-color: #dadada;
     border-width: 1px;
-    
+
 }
 hr.light {
     border-color: white;
@@ -43,7 +43,7 @@ p {
     line-height: 1.5;
     font-weight: 300;
     margin-bottom: 20px;
-   
+
 }
 .body-text {
  font-family: 'Roboto', sans-serif;
@@ -138,7 +138,7 @@ aside {
     .navbar-default .nav > li > a:hover,
     .navbar-default .nav > li > a:focus:hover {
         color: white;
-        
+
     }
     .navbar-default.affix {
         background-color: white;
@@ -150,7 +150,7 @@ aside {
     }
     .navbar-default.affix .navbar-header .navbar-brand:hover,
     .navbar-default.affix .navbar-header .navbar-brand:focus {
-         
+
         color: #5a5a5a;
     }
     .navbar-default.affix .nav > li > a,
@@ -226,7 +226,7 @@ header .header-content .header-content-inner p {
     }
     header .header-content .header-content-inner h1 {
         font-size: 50px;
-           
+
     }
     header .header-content .header-content-inner p {
         font-size: 18px;
@@ -238,7 +238,7 @@ header .header-content .header-content-inner p {
 
 @media (max-width: 768px) {
    header .header-content .header-content-inner h1 {
-     
+
             line-height: 35px;
     }
 }
@@ -625,7 +625,7 @@ box-shadow: 0px -2px 16px 0px rgba(0,0,0,0.75);
         height: 0;
         min-width: 700px
          margin-bottom: 30px;
-       
+
     }
     .videoWrapper iframe {
         position: absolute;
@@ -734,4 +734,20 @@ box-shadow: 0px -2px 16px 0px rgba(0,0,0,0.75);
 	.col-sm-4 {
 	margin-bottom:40px
 	}
+}
+@media (max-width: 768px) {
+
+.header-content-inner .header-title-small {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 6px;
+}
+
+.header-content-inner .header-title {
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+}
+
 }
