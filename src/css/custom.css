@@ -13,9 +13,9 @@ body {
     font-family: 'Exo', sans-serif;
 }
 hr {
-    border-color: #5a5a5a;
-    border-width: 3px;
-    max-width: 50px;
+    border-color: #dadada;
+    border-width: 1px;
+    
 }
 hr.light {
     border-color: white;
@@ -41,6 +41,7 @@ h6 {
 p {
     font-size: 16px;
     line-height: 1.5;
+    font-weight: 300;
     margin-bottom: 20px;
    
 }
@@ -492,6 +493,11 @@ li .menu-item {
     margin-top: 5px;
     transition: all 0.3s ease;
 }
+.affix  {
+  -webkit-box-shadow: 0px -2px 16px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px -2px 16px 0px rgba(0,0,0,0.75);
+box-shadow: 0px -2px 16px 0px rgba(0,0,0,0.75);
+}
 .affix .logo {
     margin-top: 2px;
     max-width: 70px;
@@ -502,6 +508,7 @@ li .menu-item {
 
 .footer {
     padding: 50px;
+    border-top: 1px solid #dadada;
 }
 
 @media (max-width: 768px) {
@@ -536,6 +543,14 @@ li .menu-item {
   min-height: 400px;
   max-height: 400px;
 }
+
+@media (max-width: 768px) {
+.aboutHeader {
+  min-height: 230px;
+  max-height: 230px;
+}
+
+}
 .aboutHeader .aboutHeaderContent {
   top: 10%;
 
@@ -545,6 +560,9 @@ li .menu-item {
   font-weight: 800  !important;
 }
 .who-we-are {
+  padding: 50px 10px 10px 10px;
+}
+.who-we-are-inner {
   padding: 50px 10px 10px 10px;
 }
 .who-we-are .container .row .col-md-8 h5 {
@@ -560,6 +578,7 @@ li .menu-item {
         /* 16:9 */
         padding-top: 25px;
         height: 0;
+         margin-bottom: 50px;
     }
     .videoWrapper iframe {
         position: absolute;
@@ -574,11 +593,13 @@ li .menu-item {
     /*bigger than 1250px*/
     .videoWrapper {
         position: relative;
-        padding-bottom: 650px;
+        padding-bottom: 450px;
         /* 16:9 */
         padding-top: 25px;
         height: 0;
         min-width: 700px
+         margin-bottom: 30px;
+       
     }
     .videoWrapper iframe {
         position: absolute;
@@ -588,4 +609,23 @@ li .menu-item {
         height: 100%;
         max-height: 700px !important;
     }
+}
+
+.staff-photo {
+  width: 100%
+}
+.skill-list {
+  margin-bottom: 0px;
+}
+
+
+.what-we-do {
+  padding: 50px 50px 0px 50px;
+}
+
+.what-we-do h5{
+  text-align: center;
+}
+.what-we-do-description {
+  margin-left: 15px;
 }
