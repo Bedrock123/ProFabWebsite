@@ -48,9 +48,9 @@ var body = $('#indexHeader');
 
 
 
-        setTimeout(nextBackground, 10000);
+        setTimeout(nextBackground, 6000);
     }
-    setTimeout(nextBackground, 10000);
+    setTimeout(nextBackground, 6000);
     body.css('background', backgrounds[0]);
 
 })(jQuery); // End of use strict
