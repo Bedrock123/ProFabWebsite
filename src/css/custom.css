@@ -95,6 +95,8 @@ aside {
 }
 .navbar-brand {
   font-size: 23px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .navbar-default .nav > li > a:hover,
 .navbar-default .nav > li > a:focus:hover {
@@ -441,7 +443,7 @@ body {
     line-height: 43px;
     text-align: right;
 }
-.header-content-inner h6 {
+.header-content-inner h4 {
     text-align: right;
 }
 @media (max-width: 768px) {
@@ -449,7 +451,7 @@ body {
         margin-top: 30px;
         text-align: center;
     }
-    .header-content-inner h6 {
+    .header-content-inner h4 {
         text-align: center;
     }
     .header-content-inner .header-title {
@@ -476,7 +478,7 @@ li .menu-item {
     position: absolute;
     left: 50%;
     margin-left: -70px;
-    margin-top: 10px;
+    margin-top: -10px;
     transition: all 0.3s ease;
 }
 .mobile-logo {

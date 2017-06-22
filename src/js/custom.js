@@ -41,7 +41,7 @@ var body = $('header');
        
        
     
-  $(body).fadeTo('slow', 0.3, function()
+  $(body).fadeTo('slow', 0.0, function()
     {
    body.css('background', backgrounds[current = ++current % backgrounds.length]);
 }).fadeTo('slow', 1);
