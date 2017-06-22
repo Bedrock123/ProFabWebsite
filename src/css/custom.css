@@ -106,6 +106,7 @@ aside {
 .navbar-default .nav > li > a:hover,
 .navbar-default .nav > li > a:focus:hover {
     color: #5a5a5a;
+    text-decoration: underline !important;
 }
 .navbar-default .nav > li.active > a,
 .navbar-default .nav > li.active > a:focus {
@@ -129,6 +130,7 @@ aside {
     .navbar-default .navbar-header .navbar-brand:focus {
         color: white;
     }
+
     .navbar-default .nav > li > a,
     .navbar-default .nav > li > a:focus {
         color: rgba(255, 255, 255, 1);
@@ -136,6 +138,7 @@ aside {
     .navbar-default .nav > li > a:hover,
     .navbar-default .nav > li > a:focus:hover {
         color: white;
+        
     }
     .navbar-default.affix {
         background-color: white;
@@ -147,6 +150,7 @@ aside {
     }
     .navbar-default.affix .navbar-header .navbar-brand:hover,
     .navbar-default.affix .navbar-header .navbar-brand:focus {
+         
         color: #5a5a5a;
     }
     .navbar-default.affix .nav > li > a,
@@ -158,6 +162,10 @@ aside {
     .navbar-default.affix .nav > li > a:focus:hover {
         color: #5a5a5a;
     }
+}
+
+.navbar-brand:hover {
+ text-decoration: underline !important;
 }
 header {
     position: relative;
@@ -171,7 +179,9 @@ header {
     background-image: url('../img/pro-fab-compressed/profab-race-car-overlay.jpg');
     text-align: center;
     color: white;
+     background-color: #000!important;
 }
+
 header .header-content {
     position: relative;
     text-align: center;
@@ -462,6 +472,7 @@ body {
     }
     .header-content-inner .header-title {
         text-align: center;
+        font-size: 30px;
     }
     .menu-item {
         text-align: center;
@@ -512,6 +523,10 @@ box-shadow: 0px -2px 16px 0px rgba(0,0,0,0.75);
     border-top: 1px solid #dadada;
 }
 
+.footer-aux-content {
+    font-size: 13px;
+    line-height: 20px;
+}
 @media (max-width: 768px) {
 .footer {
     padding: 50px 20px 20px 20px;
@@ -528,7 +543,7 @@ box-shadow: 0px -2px 16px 0px rgba(0,0,0,0.75);
     font-size: 13px;
 }
  .copy-right-text {
-    font-size: 14px;
+    font-size: 11px;
 }
 .footer .container .row .text-center strong {
     margin-bottom: 30px;
@@ -614,6 +629,7 @@ box-shadow: 0px -2px 16px 0px rgba(0,0,0,0.75);
 
 .staff-photo {
   width: 100%
+  margin-bottom: 10px;
 }
 .skill-list {
   margin-bottom: 0px;
@@ -637,6 +653,7 @@ box-shadow: 0px -2px 16px 0px rgba(0,0,0,0.75);
 .contactHeader {
   min-height: 400px;
   max-height: 400px;
+  background: white !important;
 }
 
 @media (max-width: 768px) {
