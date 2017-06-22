@@ -31,26 +31,24 @@
 
 var body = $('#indexHeader');
     var backgrounds = [
-      'url("./img/pro-fab-compressed/profab-race-car-overlay.jpg")', 
-      'url("./img/pro-fab-compressed/profab-slide2.jpg")', 
-    'url("./img/pro-fab-compressed/profab-slide3.jpg")', 
-      ];
+        'url("./img/pro-fab-compressed/profab-race-car-overlay.jpg")', 
+        'url("./img/pro-fab-compressed/profab-slide2.jpg")', 
+        'url("./img/pro-fab-compressed/profab-slide3.jpg")', 
+    ];
     var current = 0;
 
     function nextBackground() {
-       
-       
-    
-  $(body).fadeTo('slow', 0.0, function()
-    {
-   body.css('background', backgrounds[current = ++current % backgrounds.length]);
-}).fadeTo('fast', 1);
-
-
+        $(body).animate({background: "#222"}, 'slow');
+        $(body).fadeTo('fast', 0.8, function() {
+        
+            body.css('background', backgrounds[current = ++current % backgrounds.length]);
+        
+        }).fadeTo('fast', 1);
 
         setTimeout(nextBackground, 6000);
     }
     setTimeout(nextBackground, 6000);
+
     body.css('background', backgrounds[0]);
 
 })(jQuery); // End of use strict
