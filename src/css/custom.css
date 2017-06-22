@@ -556,7 +556,7 @@ box-shadow: 0px -2px 16px 0px rgba(0,0,0,0.75);
 
 }
 .aboutHeader .aboutHeaderContent h1 {
-  line-height: 40px;
+  line-height: 48px;
   font-weight: 800  !important;
 }
 .who-we-are {
@@ -628,4 +628,32 @@ box-shadow: 0px -2px 16px 0px rgba(0,0,0,0.75);
 }
 .what-we-do-description {
   margin-left: 15px;
+}
+
+/*  Contact PAage */
+
+
+.contactHeader {
+  min-height: 300px;
+  max-height: 300px;
+}
+
+@media (max-width: 768px) {
+.contactHeader {
+  min-height: 230px;
+  max-height: 230px;
+}
+
+}
+.contactHeader .contactHeaderContent {
+  top: 5%;
+
+}
+.contactHeader .contactHeaderContent h1 {
+  line-height: 48px;
+  color: black;
+  font-weight: 800  !important;
+}
+.black {
+  color: black !important;
 }
