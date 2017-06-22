@@ -29,7 +29,7 @@
     })
 
 
-var body = $('header');
+var body = $('#indexHeader');
     var backgrounds = [
       'url("./img/pro-fab-compressed/profab-race-car-overlay.jpg")', 
       'url("./img/pro-fab-compressed/profab-slide2.jpg")', 
@@ -44,13 +44,13 @@ var body = $('header');
   $(body).fadeTo('slow', 0.0, function()
     {
    body.css('background', backgrounds[current = ++current % backgrounds.length]);
-}).fadeTo('slow', 1);
+}).fadeTo('fast', 1);
 
 
 
-        setTimeout(nextBackground, 5000);
+        setTimeout(nextBackground, 10000);
     }
-    setTimeout(nextBackground, 5000);
+    setTimeout(nextBackground, 10000);
     body.css('background', backgrounds[0]);
 
 })(jQuery); // End of use strict
