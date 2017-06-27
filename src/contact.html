@@ -1,181 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="description" content="">
-      <meta name="author" content="Built By King Willy">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-      <link href="img/logo.png" rel="shortcut icon" type="image/x-icon">
-      <title>ProFab - Chasis & Custom Cars</title>
-      <!-- Bootstrap Core CSS -->
-      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-      <!-- Custom Fonts -->
-      <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-      <link href="https://fonts.googleapis.com/css?family=Exo:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
-      <!-- Theme CSS -->
-      <link href="css/custom.css" rel="stylesheet">
-      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-      <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-      <![endif]-->
-      <script src='https://www.google.com/recaptcha/api.js'></script>
-   </head>
-   <body id="page-top">
-      <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-         <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-               <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-               </button>
-               <a href="index.html"><img src="img/logo.png" alt="Profab Logo" class="img-responsive mobile-logo hidden-sm	 hidden-md hidden-lg"></a>
-               <a class="navbar-brand page-scroll hidden-xs black" href="about.html">ABOUT</a>
-               <a class="navbar-brand page-scroll hidden-xs black" href="contact.html">CONTACT</a>
-            </div>
-            <a href="index.html"><img src="img/logo.png" alt="Profab Logo" class="img-responsive logo hidden-xs"></a>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-               <ul class="nav navbar-nav navbar-right">
-                  <li class="hidden-sm	 hidden-md hidden-lg">
-                     <a class="menu-item " href="about.html">ABOUT</a>
-                  </li>
-                  <li class="hidden-sm	 hidden-md hidden-lg">
-                     <a class=" menu-item   black" href="contact.html">CONTACT</a>
-                  </li>
-                  <li>
-                     <a class="menu-item black" href="tel:800-836-0272">(800) 836-0272 </a>
-                  </li>
-               </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-         </div>
-         <!-- /.container-fluid -->
-      </nav>
-      <header class='contactHeader' style="background:white;">
-         <div class="header-content contactHeaderContent">
-            <div class="header-content-inner contactHeaderContent">
-               <h1>CONTACT <br> PROFAB</h1>
-            </div>
-         </div>
-      </header>
+<form class="form-horizontal" action="php/send-email.php" method="post" novalidate>
+<fieldset>
+<div class="form-group">
+    <div class="col-lg-12">
+        <input type="text" name="fname" class="form-control"  placeholder="FIRST NAME *" required>
+    </div>
+</div>
+  <div class="form-group">
+    <div class="col-lg-12">
+        <input type="text" name="lname" class="form-control"  placeholder="LAST NAME">
+    </div>
+</div>
+<div class="form-group">
+    <div class="col-lg-12">
+        <input type="Email" name="email" class="form-control"  placeholder="EMAIL *" required>
+    </div>
+</div>
+<div class="form-group">
+    <div class="col-lg-12">
+        <input type="text" name="phone" class="form-control"  placeholder="YOUR PHONE *" required>
+    </div>
+</div>
+<div class="form-group">
+    <div class="col-lg-12">
+        <input type="text" name="howcontactyou" class="form-control"  placeholder="HOW SHOULD WE CONTACT YOU? *" required>
+    </div>
+</div>
+<div class="form-group">
+<div class="col-lg-12">
+    <textarea name="message" class="form-control" rows="3" placeholder="YOUR MESSAGE *" required></textarea>
+
+</div>
+</div>
 
 
-        <div class="contact-wrapper">
-         <div class="container contact-wrapper-inner">
-            <div class="row">
-               <div class="col-md-5 col-md-offset-1">
-                    <h5> <strong>WE WOULD LOVE TO TALK TO YOU.</strong></h5>
-                    <br><br>
-                    <form class="form-horizontal">
-                    <fieldset>
-                        <div class="form-group">
-                            <div class="col-lg-12">
-                                <input type="text" class="form-control"  placeholder="FIRST NAME *">
-                            </div>
-                        </div>
-                          <div class="form-group">
-                            <div class="col-lg-12">
-                                <input type="text" class="form-control"  placeholder="LAST NAME *">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-lg-12">
-                                <input type="Email" class="form-control"  placeholder="EMAIL *">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-lg-12">
-                                <input type="text" class="form-control"  placeholder="YOUR PHONE *">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-lg-12">
-                                <input type="text" class="form-control"  placeholder="SUBJECT *">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-lg-12">
-                                <input type="text" class="form-control"  placeholder="HOW SHOULD WE CONTACT YOU? *">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                        <div class="col-lg-12">
-                            <textarea class="form-control" rows="3" placeholder="YOUR MESSAGE *"></textarea>
+<div class="form-group">
+<div class="col-lg-12">
 
-                        </div>
-                        </div>
+    <button type="submit" class="btn btn-primary btn-block submit-button">Submit  <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+</div>
+</div>
+<br>
 
+<div class="g-recaptcha" data-sitekey="6LdgEicUAAAAAPkzuOgo4-6k2QQsnGTS3QNyeKPy"></div>
 
-                        <div class="form-group">
-                        <div class="col-lg-12">
+</fieldset>
+</form>
+<div class="form-response"></div>
 
-                            <button type="submit" class="btn btn-primary btn-block submit-button">Submit  <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
-                        </div>
-                        </div>
-                        <br>
-                        <div class="g-recaptcha" data-sitekey="6LdybSYUAAAAAF5DR627NEPqH9AHZSyPMLaeVmqj"></div>
-
-                    </fieldset>
-                    </form>
-
-               </div>
-                <div class="col-md-6 ">
-
-
-                    <h5> <strong>COME VISIT US.</strong></h5>
-                    <br><br>
-                    <div class="contact-info">
-                        <strong>27 Ridge Rd.</strong><br>
-                        <strong>Whitehouse Station,</strong><br>
-                        <strong>New Jersey</strong>
-                        <br> <br>
-                        <strong><a href="tel:(800) 836-0272">(800) 836-0272</a></strong>
-
-
-                    </div>
-                         <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:340px;width:100%'><div id='gmap_canvas' style='height:440px;width:700px;'></div><div><small><a href="http://embedgooglemaps.com">Click here to generate your map!</a></small></div><div><small><a href="http://mrdiscountcode.hk/agoda/">Get your Agoda discount code now and save up to 70%</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(40.605206,-74.73568999999998),mapTypeId: google.maps.MapTypeId.HYBRID};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(40.605206,-74.73568999999998)});infowindow = new google.maps.InfoWindow({content:'<strong>PROFAB</strong><br>27 Ridge Rd. Whitehouse Station New Jersey<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
-
-               </div>
-            </div>
-         </div>
-
-
-      <footer class='footer'>
-         <div class="row">
-            <div class="col-sm-10 col-sm-offset-1  text-center">
-               <div class="row">
-                <div class="col-sm-4 col-xs-12  text-center">
-                     <strong>LOCATION</strong>
-                     <br><br>
-                     <p>27 Ridge Rd,<br>
-                     Whitehouse Station, NJ</p>
-                  </div>
-                  <div class="col-sm-4 col-xs-12 text-center ">
-                        <a href=" https://www.facebook.com/Profab-Chassis-199513840084248/" target="_blank"><img src="img/footer_icons.png" alt="Footer Icons" class="img-responsive footer-logos"></a>
-                         <br>
-                         <strong class="chasis-class-cars">CHASSIS &amp; CUSTOM CARS</strong>
-                         <br>
-                         <p class="copy-right-text">© PROFAB / SITE CRAFTED BY KINGWILLY</p>
-                      </div>
-                <div class="col-sm-4 col-xs-12  text-center">
-                     <strong>CONTACT</strong>
-                     <br><br>
-                     <p><a href="mailto:Info@ profabchassis,com">Info@ profabchassis,com</a><br>
-                     <a href="tel:800-836-0272">(800) 836-0272</a> </p>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </footer>
-      <!-- jQuery -->
-      <script src="vendor/jquery/jquery.min.js"></script>
-      <!-- Bootstrap Core JavaScript -->
-      <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-      <!-- Theme JavaScript -->
-      <script src="js/custom.js"></script>
-   </body>
-</html>
